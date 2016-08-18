@@ -1,0 +1,50 @@
+.wrappLoader
+  position: fixed;
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 1000
+  display: flex
+  justify-content: center
+  align-items: center
+  .loader-section
+    position: fixed
+    top: 0
+    width: 51%
+    height: 100%
+    background: #222222
+    z-index: 1000
+    transform: translateX(0)
+    will-change: transform
+  .preloader-wrapper
+    width: 150px
+    height: 150px
+    // left: 50%
+    // top: 50%
+    opacity: 1
+    visibility: visible
+    z-index: 1001
+    .spinner-layer
+      overflow: hidden
+  .rightDor
+    right: 0
+  .leftDor
+    left: 0
+  /* Loaded */
+  &.loaded
+    visibility: hidden
+    transform: translateY(-100%)
+    transition: all 0.3s 1s ease-out
+    .rightDor
+      transform: translateX(0%)
+      transform: translateX(100%)
+      transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000)
+    .leftDor
+      transform: translateX(0%)
+      transform: translateX(-100%)
+      transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000)
+
+    .preloader-wrapper
+      opacity: 0;
+      transition: all 0.3s ease-out

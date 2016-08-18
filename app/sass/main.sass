@@ -1,0 +1,181 @@
+@import variables
+
+*
+  outline: none
+  box-sizing: border-box
+  &:before
+    box-sizing: border-box
+
+html
+  width: 100%
+  height: 100%
+  font-size: 18px
+  font-family: $defaultFont
+  color: $defaultColor
+  font-weight: 400
+  word-wrap: break-word
+  overflow-wrap: break-word
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizeLegibility
+
+body
+  width: 100%
+  height: 100%
+  font-family: inherit
+  color: inherit
+  min-height: 100%
+  height: auto
+  max-width: 100%
+  overflow-y: auto
+  overflow-x: hidden
+
+h1
+  color: white
+  font-size: 34px
+  font-weight: 500
+
+h2
+  color: #3e3e3e
+  font-size: 34px
+  font-weight: 400
+
+h4
+  color: white
+  font-size: 18px
+  font-weight: 500
+
+p
+  font-size: 18px
+  font-weight: 400
+  line-height: 29px
+img
+  max-width: 100%
+  height: auto
+  -ms-interpolation-mode: bicubic
+  display: inline-block
+  vertical-align: middle
+
+iframe
+    width: 100%
+    height: 100%
+a
+  &:visited
+    color: inherit
+
+input
+  border: none
+  height: 50px
+  border-bottom: solid 1px #e1e1e1
+  width: 205px
+
+::-webkit-input-placeholder
+  font-family: $defaultFont
+  color: #c6c6c6
+  font-size: 18px
+  font-weight: 400
+
+::-moz-placeholder
+  font-family: $defaultFont
+  color: #c6c6c6
+  font-size: 18px
+  font-weight: 400
+:-moz-placeholder
+  font-family: $defaultFont
+  color: #c6c6c6
+  font-size: 18px
+  font-weight: 400
+:-ms-input-placeholder
+  color: #c6c6c6
+  font-family: $defaultFont
+  font-size: 18px
+  font-weight: 400
+
+.content-wrapp
+  max-width: 1045px
+  margin: 0 auto
+
+.flexB
+  display: flex
+  align-items: center
+  width: 100%
+
+.wrappcContent
+  width: 100%
+  max-width: 940px
+  margin: 0 auto
+
+.btn
+  display: inline-block
+  cursor: pointer
+  color: #fff
+  font-size: 18px
+  text-align: center
+  font-weight: 500
+  line-height: 50px
+  color: #fff
+  text-decoration: none
+  // &:visited
+  //   color: #fff
+
+.btnBrend
+  width: 260px
+  height: 50px
+  background-color: #004687
+  border-radius: 3px
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25)
+  &:visited
+    color: #fff
+.btnBrendWhite
+  @extend .btnBrend
+  color: #004687
+  background-color: white
+  &:visited
+    color: $defaultColor
+
+.backgroundBrend
+  background-color: #f2f2f3
+  width: 100%
+
+.backgroundBrendBlue
+  background-color: #004687
+
+.backgroundBrendWhite
+  background-color: #ff
+
+.valute
+  position: relative
+  display: inline!important
+  span
+    display: inline!important
+    &:last-child
+      position: absolute
+      top: 30%
+      left: -5%
+
+.cardBrend
+  background-color: #fff
+  border-radius: 3px
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15)
+  .desc
+    padding: 21px 27px 32px 19px
+  p
+    color: #8c8c8c
+    font-size: 15px
+    font-weight: 400
+    line-height: 22px
+
+.alertify-logs
+  z-index: 9999
+
+@import _loader
+@import _icons
+@import _modals
+@import _header
+@import _fullScreenSlider
+@import _treningSystem
+@import _person
+@import _reviews
+@import _carusels
+@import _advice
+@import _footer

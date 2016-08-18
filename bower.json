@@ -1,0 +1,20 @@
+{
+  "name": "dot",
+  "description": "crate dots and move them",
+  "main": "index.js",
+  "authors": [
+    "Serokruluy"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "almond": "^0.3.2"
+  }
+}

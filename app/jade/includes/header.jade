@@ -1,0 +1,58 @@
+mixin header
+  header.header
+    .top
+      .wrappcContent.flexB
+        .right.flexB
+          a.email(href="mailto:info@pg-consult.ru")
+            i.icon-svg.icon-emil
+              svg(viewBox="0 0 18 12" width="18" height="12")
+                use(xlink:href="/images/icons/sprite.svg#icon-envelope")
+            | info@pg-consult.ru
+        .left
+          i.icon-svg
+          svg(viewBox="0 0 16 16" width="20" height="16")
+            use(xlink:href="/images/icons/sprite.svg#icon-fb")
+          i.icon-svg
+          svg(viewBox="0 0 16 16" width="20" height="16")
+            use(xlink:href="/images/icons/sprite.svg#icon-p")
+          i.icon-svg
+          svg(viewBox="0 0 16 16" width="20" height="16")
+            use(xlink:href="/images/icons/sprite.svg#icon-twitter")
+          i.icon-svg
+          svg(viewBox="0 0 16 16" width="20" height="16")
+            use(xlink:href="/images/icons/sprite.svg#icon-vimeo")
+          i.icon-svg
+          svg(viewBox="0 0 16 16" width="20" height="16")
+            use(xlink:href="/images/icons/sprite.svg#icon-instagram")
+          i.icon-svg
+          svg(viewBox="0 0 16 16" width="20" height="16")
+            use(xlink:href="/images/icons/sprite.svg#icon-google")
+    .bottom
+      .wrappcContent.flexB
+        a.logo#logoWhite(href="#" title="Practicum Group")
+        nav
+          a(href="#") О системе
+          a(href="#") Тренер
+          a(href="#") Тренинги
+          a(href="#") Специальное предложение
+          a(href="#") Отзывы
+          a(href="#") Публикации в СМИ
+          a(href="#") Контакты
+        .callback
+          .phone
+            span 8 495
+            span=" 792 99 62"
+          a.btnCallback.flexB.modal-trigger(href='#modal1')
+            i.icon-svg
+                svg(viewBox="0 0 14 14" width="14" height="14")
+                  use(xlink:href="/images/icons/sprite.svg#icon-telephone")
+            | Заказать обратный звонок
+
+  form#modal1.modal(action="")
+    .modal-close.close
+      span
+    .modal-content
+      h4 Заказать обратный звонок
+      input(id="firstname" type="text" placeholder="Введите Ваше имя" class="validate" name='name' value='')
+      input(id="phone" type="tel" placeholder="Введите номер телефона" class="validate" name='phone' value='')
+      input.modal-action.btnBrend.btn(type="submit" value="Отправить")

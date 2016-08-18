@@ -1,0 +1,51 @@
+//- mixins
+include ../includes/loader
+
+include ../includes/valute
+
+include ../includes/header
+include ../includes/footer
+include ../includes/fullScreenSlider
+include ../includes/treningSystem
+include ../includes/Person
+include ../includes/reviews
+include ../includes/carusels
+include ../includes/advice
+
+
+//-
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(content='', name='keywords')
+    meta(content='', name='description')
+    meta(content='width=device-width, initial-scale=1, maximum-scale=1', name='viewport')
+    meta(content='#fff', name='msapplication-TileColor')
+    meta(content='#fff', name='theme-color')
+    link(rel="stylesheet" href="lib/owl.carousel/owl-carousel/owl.carousel.css")
+    link(rel="stylesheet" href='lib/animate.min.css')
+    link(rel='stylesheet' href='css/main.min.css',)
+    block title
+
+  body
+    block content
+    //- CDN============================
+    //- CSS
+    //- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css")
+    //- JS
+    //- script(src="https://code.jquery.com/jquery-2.2.4.min.js")
+    //- script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js")
+    //- script(src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js")
+    //- CDN============================
+    //- script(src="lib/wow.min.js")
+    //- script(src="lib/jquery-2.2.4.min.js")
+    //- script(src="lib/alertify.js")
+    //- script(src="lib/materialize/js/velocity.min.js")
+    //- script(src="lib/materialize/js/leanModal.js")
+
+    //- script(src="lib/owl.carousel/owl-carousel/owl.carousel.min.js")
+    script(src="js/all.js")
+    //- Main Js
+    script(src="js/main.min.js")
+    script(type='text/javascript', id="map" charset='utf-8', async='', src='https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=XDHShXX1jfbBQGKrsmV-bmFamKnLJy1C&width=940&height=368&id=map&lang=ru_UA&sourceType=constructor&scroll=true')
