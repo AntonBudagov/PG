@@ -1,0 +1,166 @@
+.slider
+  position: relative
+  height: 661px
+  #fullScreenSlider
+  .owl-prev, .owl-next
+    margin-top: 300px
+  .slideWrapp
+    position: relative
+
+  p
+    color: #fff
+    font-size: 16px
+
+  .slideOne
+    background-image: url(/images/upload/slide4_img1.jpg)
+    height: 661px
+    width: 100%
+    background-size: cover
+  .slideTwo
+    background-image: url(/images/upload/slide_img2.jpg)
+    @extend .slideOne
+    background-size: 1220px auto
+    background-position: 69% top
+    background-repeat: no-repeat
+
+  .headSlide
+    padding-top: 26px
+    display: flex
+    p
+      margin-right: 48px
+      width: 343px
+
+  .title
+    width: 211px
+    height: 31px
+    color: #fff
+    font-family: $brendFont
+    font-size: 34px
+    font-weight: 500
+    margin-right: 28px
+
+  .groupBtn
+    width: 311px
+    height: 49px
+    text-align: center
+    line-height: 49px
+    border-radius: 6px
+    font-family: $brendFont
+    font-size: 24px
+    font-weight: 500
+    overflow: hidden
+    border-radius: 6px
+    .next, .prev
+      width: 50%
+      height: 100%
+      cursor: pointer
+      background-color: #fff
+      color: #3e3e3e
+    .active
+      color: #fff
+      background-color: #004687
+
+  .middleSlide
+    p
+      width: 580px
+      margin: 0 auto
+      font-size: 16px
+      text-align: center
+
+  .circle
+    margin: 57px auto 20px
+    width: 215px
+    height: 215px
+    background-color: white
+    border-radius: 50%
+    background-image: url(/images/upload/logoOther.jpg)
+    background-repeat: no-repeat
+    background-position: center 25px
+
+  .bottomSlide
+    margin: 62px auto 0
+    width: 812px
+    color: #fff
+    text-align: center
+    // justify-content: space-between
+    align-items: flex-start
+    .statistic
+      margin-top: 18px
+      font-size: 24px
+      font-weight: 500
+      font-family: $brendFont
+      text-transform: uppercase
+    p
+      font-size: 14px
+
+    .world,
+    .human
+      width: 50%
+      text-align: center
+
+    .human
+      padding-left: 60px
+      .statistic
+        text-transform: none
+
+  .slideTwo
+    .headSlide
+      justify-content: space-between
+    .title
+      color: #3e3e3e
+      width: 332px
+    .middleSlide
+      margin-top: 0
+      .desc
+        width: 620px
+        height: 367px
+        padding: 43px 110px 147px 27px
+        p
+          width: 100%
+          text-align: left
+          padding-bottom: 10px
+
+    .bottomSlide
+      width: 425px
+      height: 216px
+      margin: 0
+      padding-top: 25px
+      .desc
+        display: flex
+        margin-bottom: 25px
+      .info
+        width: 133px
+        height: 70px
+        margin-right: 28px
+        .numb
+          text-align: left
+          color: #004687
+          font-size: 24px
+          font-weight: 500
+          text-transform: uppercase
+          font-family: $brendFont
+        p
+          text-align: left
+          color: #777
+          font-size: 14px
+
+  .backgroundBrendBlue
+    height: 245px
+    position: relative
+    background-image: url(/images/upload/blueEfect.png)
+    background-repeat: no-repeat
+    background-position: center center
+    overflow: hidden
+    .backgroundBrendBlueContent
+      align-items: flex-start
+
+    h3
+      margin-top: 74px
+      width: 195px
+      color: #fff
+      font-family: $brendFont
+      font-size: 37px
+      font-weight: 500
+      margin-right: 125px
+    img
+      margin-top: 22px

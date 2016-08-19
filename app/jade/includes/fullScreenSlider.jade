@@ -1,23 +1,12 @@
 mixin fullScreenSlider
   .fullScreenSlider
-    #fullScreenSlider
-      .slideOne
-        .slideContent.wrappcContent.flexB
-          .leftContent
-            h1 СТАНЬ ЧЕМПИОНОМ ПРОДАЖ ЗА 4 ДНЯ
-            h4 Авторские тренинги Евгения Котова
-            a.btn.btnBrend.modal-trigger(href='#modal1') Регистрация на участие
-          .rightContent
-            .videoItem(id="EqcQOmK1twk")
-              .wrappImgVideo
-                img(src="/images/upload/video1.jpg", alt="")
-      .slideOne
-        .slideContent.wrappcContent.flexB
-          .leftContent
-            h1 СТАНЬ ЧЕМПИОНОМ ПРОДАЖ ЗА 5 ДНЯ
-            h4 Авторские тренинги Евгения Котова
-            .btn.btnBrend Регистрация на участие
-          .rightContent
-            .videoItem(id="EqcQOmK1twk")
-              .wrappImgVideo
-                img(src="/images/upload/video1.jpg", alt="")
+    .wrappContent
+      .garantSel
+        .info
+          h1 Гарантированный рост продаж в 2 раза
+          h4 Система обучения профессиональным продажам от Евгения Котова.
+          a.btn.btnBrend.modal-trigger(href='#modal1') Регистрация на участие
+          .graph
+    .video
+      video(width="100%" height="auto" autoplay loop muted)
+        source(src="videos/99.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')

@@ -14,10 +14,14 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create();
 
 gulp.task('compress', function (cb) {
-  //var comparisons {beautify}
+  var options = {
+    mangle: false,
+    compress: false,
+    output: { beautify: true }
+  }
   pump([
         gulp.src('app/js/*.js'),
-        uglify(),
+        uglify(options),
         rename({suffix: '.min'}),
         gulp.dest('dist/js')
     ],

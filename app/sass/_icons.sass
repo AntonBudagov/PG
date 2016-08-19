@@ -1,7 +1,7 @@
 .icon-pg
   background-image: url(../images/icons/sprite-icons.png)
   background-repeat: no-repeat
-  background-size: 56px auto
+  background-size: 68px auto
   display: table
   &:before
     content: ''
@@ -75,54 +75,284 @@
     width: 15px
     height: 51px
 
-.videoItem
-  .wrappImgVideo
+
+.icon-target
+  background-position: 0 -650px
+  margin: 0 auto
+  &:before
+    width: 47px
+    height: 47px
+    margin: 0
+
+.icon-people
+  background-position: 0 -717px
+  &:before
+    width: 48px
+    height: 27px
+    margin: 0
+
+.icon-phone
+    background-position: 0 -764px
+    &:before
+      margin: 0
+      width: 17px
+      height: 26px
+
+.icon-graph
+  background-position: 0 -810px
+  &:before
+    margin: 0
+    width: 24px
+    height: 29px
+
+.icon-smile
+  background-position: 0 -859px
+  &:before
+    margin: 0
+    width: 31px
+    height: 30px
+.icon-fish
+  background-position: 0 -909px
+  &:before
+    margin: 0
+    height: 35px
+    width: 37px
+.icon-blueHand
+  background-position: 0 -963px
+  &:before
+    margin: 0
+    width: 22px
+.icon-commit
+  background-position: 0 -1011px
+  &:before
+    margin: 0
+    width: 32px
+    height: 33px
+.icon-desc
+  background-position: 0 -1064px
+  &:before
+    margin: 0
+    width: 27px
+.icon-magnet
+  background-position: 0 -1112px
+  &:before
+    margin: 0
+    width: 28px
+    height: 20px
+.icon-funnel
+  background-position: 0 -1152px
+  &:before
+    margin: 0
+    width: 25px
+.icon-classRoom
+  background-position: 0 -1200px
+  &:before
+    margin: 0
+    height: 31px
+    width: 37px
+.icon-star
+  background-position: 0 -1251px
+  &:before
+    margin: 0
+    width: 32px
+    height: 31px
+.icon-females
+  background-position: 0 -1301px
+  &:before
+    margin: 0
+    width: 30px
+    height: 32px
+.icon-calendar
+  background-position: 0 -1352px
+  &:before
+    margin: 0
+    width: 28px
+    height: 31px
+.icon-leg
+  background-position: 0 -1403px
+  &:before
+    margin: 0
+    width: 37px
+    height: 30px
+
+
+
+
+
+.icon-bluehands
+    background-position: 0 -1453px
+    &:before
+      margin: 0
+.icon-yellowhands
+    background-position: 0 -1510px
+    &:before
+      margin: 0
+      width: 39px
+      height: 26px
+.icon-whitehends
+  background-position: 0 -1556px
+  margin: 0 auto
+  &:before
+    width: 56px
+    height: 37px
+    margin: 0
+.icon-twohuman
+  background-position: 0 -1613px
+  &:before
+    margin: 0
+    width: 37px
+    height: 29px
+.icon-doc
+  background-position: 0 -1662px
+  &:before
+    margin: 0
+    width: 30px
+    height: 33px
+.icon-yellowtea
+  background-position: 0 -1715px
+  &:before
+    margin: 0
+    width: 15px
+    height: 51px
+.icon-check
+  background-position: 0 -1786px
+  &:before
+    margin: 0
+    width: 47px
+    height: 38px
+.icon-msg
+  background-position: 0 -1844px
+  &:before
+    margin: 0
+    width: 44px
+    height: 40px
+.icon-human
+  margin: 0 auto
+  background-position: 0 -1904px
+  &:before
+    margin: 0
+    width: 68px
+    height: 68px
+.icon-earth
+  margin: 0 auto
+  background-position: 0 -1992px
+  &:before
+    margin: 0
+    width: 68px
+    height: 68px
+.icon-playwhite
+    background-position: 0 -2080px
+    &:before
+      width: 23px
+      height: 27px
+      margin: 0
+.icon-bigArrow
+  background-position: 0 -2127px
+  &:before
+    height: 54px
+    margin: 0
+.icon-smallArrow
+  background-position: 0 -2201px
+  &:before
+    height: 22px
+    margin: 0
+
+
+
+
+
+
+
+
+// Nav Carsuel
+
+.owl-controls
+  .owl-buttons
+    position: absolute
+    top: 70%
     width: 100%
-    height: 100%
-    position: relative
+  .owl-prev, .owl-next
+    font-size: 0
+    line-height: 0
+    position: absolute
+    display: block
+    width: 90px
+    height: 95px
+    margin-top: -45px
+    padding: 0
+    cursor: pointer
+    color: transparent
+    border: none
+    outline: none
+    background: transparent
+    // background-image: url(/images/sprite-icons.png)
+    background-repeat: no-repeat
+    background-size: 20px auto
+    background-color: rgba(0, 0, 0, 0.1)
+    display: inline-block
+    background-position: 50% 50%
+    transition: all .35s
+  .owl-prev
+
+    left: 0
+    background-image: url(../images/icons/left_3.svg#icon-left)
+    &:hover
+      background-size: 25px auto
+      background-position: 40% 50%
+
+    &.disabled
+      opacity: .8
+      background-position: 0 -204px
+  .owl-next
+    right: 0
+    background-image: url(../images/icons/right_2.svg#icon-right)
+    &:hover
+      background-size: 25px auto
+      background-position: 60% 50%
+    &.disabled
+      opacity: .8
+      background-position: 0 -261px
+
+
+.owl-controls
+  .owl-pagination
+    position: absolute
+    bottom: 0%
+    width: 100%
     display: flex
     align-items: center
-    background-color: #000
-    overflow: hidden
-    img
-      position: absolute
-      left: 0
-      right: 0
-      margin: auto
-      bottom: 0
-      top: 0
-    &:before
-      position: absolute
-      cursor: pointer
-      width: 124px
-      height: 124px
-      background-color: rgba(0, 0, 0, 0.48)
-      display: table
-      content: ''
-      top: 50%
-      left: 50%
-      z-index: 2
+  .owl-page
+    display: inline-block
+    zoom: 1
+    span
+      display: block
+      width: 23px
+      height: 23px
+      background-color: #aaa9a3
+      margin: 0 14px 0 0
       border-radius: 50%
-      background-size: 54px auto
-      background-image: url(../images/icons/play.svg#icon_play)
-      background-repeat: no-repeat
-      background-position: 41px 31px
-      margin-top: -62px
-      margin-left: -62px
+    &.active
+      span
+        width: 29px
+        height: 29px
+        background-color: #004687
 
-.slideContent
-  .videoItem
-    .wrappImgVideo
-      &:before
-        margin-top: -60px
-        margin-left: -51px
-.card
-  .videoItem
-    .wrappImgVideo
-      &:before
-        width: 60px
-        height: 60px
-        background-size: 30px auto
-        background-position: 18px 12px
-        margin-top: -30px
-        margin-left: -30px
+#owol-personSlider
+  .owl-controls
+    max-width: 940px
+    position: relative
+    margin: 0 auto
+    bottom: 56px
+
+.carusels
+  .owl-pagination
+    justify-content: center
+
+#owl-caruselCompany
+  .owl-pagination
+    bottom: -90px
+
+#owl-caruselPublications
+  .owl-pagination
+    bottom: -85px
+

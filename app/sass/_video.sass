@@ -1,0 +1,94 @@
+.videoItem
+  .wrappImgVideo
+    width: 100%
+    height: 100%
+    position: relative
+    display: flex
+    align-items: center
+    background-color: #000
+    overflow: hidden
+    img
+      position: absolute
+      left: 0
+      right: 0
+      margin: auto
+      bottom: 0
+      top: 0
+    &:before
+      position: absolute
+      cursor: pointer
+      width: 124px
+      height: 124px
+      background-color: rgba(0, 0, 0, 0.48)
+      display: table
+      content: ''
+      top: 50%
+      left: 50%
+      z-index: 2
+      border-radius: 50%
+      background-size: 54px auto
+      background-image: url(../images/icons/play.svg#icon_play)
+      background-repeat: no-repeat
+      background-position: 41px 31px
+      margin-top: -62px
+      margin-left: -62px
+
+.slideContent
+  .videoItem
+    .wrappImgVideo
+      &:before
+        margin-top: -60px
+        margin-left: -51px
+
+.card
+  .videoItem
+    .wrappImgVideo
+      &:before
+        width: 60px
+        height: 60px
+        background-size: 30px auto
+        background-position: 18px 12px
+        margin-top: -30px
+        margin-left: -30px
+
+.videoFigth
+  position: relative
+  width: 100%
+  height: 738px
+  .wrappContent
+    left: 50%
+    margin-left: -470px
+    position: absolute
+    z-index: 10
+    top: 53px
+    h2
+      width: 708px
+      text-shadow: 0.5px 0.9px 2px #081023
+      color: #fff
+      font-family: $brendFont
+      font-size: 34px
+      font-weight: 500
+
+  .videoItem
+    width: 100%
+    height: 100%
+    .wrappImgVideo
+      width: 1400px
+      background-color: #fff
+      margin: 0 auto
+      img
+        position: relative
+      &:before
+        content: attr('data-content')
+        background-size: 72px auto
+        background-color: rgba(231,232,232,0.7)
+        width: 181px
+        height: 181px
+        margin-top: -28px
+        margin-left: -91.5px
+        background-position: 63px 48px
+
+.afterVideo
+  .backgroundBrendBlue
+    text-align: center
+    height: 145px
