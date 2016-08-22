@@ -1,43 +1,9 @@
 mixin carusels
   .carusels
     .caruselCompany
-      .wrappcContent
+      .wrappContent
         h3 Компании с которыми мы работаем
         #owl-caruselCompany
-          .slideContent
-            img(src="/images/upload/noSlide.jpg", alt="")
-          .slideContent
-            img(src="/images/upload/noSlide.jpg", alt="")
-          .slideContent
-            img(src="/images/upload/noSlide.jpg", alt="")
-          .slideContent
-            img(src="/images/upload/noSlide.jpg", alt="")
-          .slideContent
-            img(src="/images/upload/noSlide.jpg", alt="")
-          .slideContent
-            img(src="/images/upload/noSlide.jpg", alt="")
-          .slideContent
-            img(src="/images/upload/noSlide.jpg", alt="")
-          .slideContent
-            img(src="/images/upload/noSlide.jpg", alt="")
-          .slideContent
-            img(src="/images/upload/delov.png", alt="")
-          .slideContent
-            img(src="/images/upload/noSlide.jpg", alt="")
-          .slideContent
-            img(src="/images/upload/back1.jpg", alt="")
-
-    .caruselPublications
-        .wrappcContent
-          h3 Публикации в СМИ
-          #owl-caruselPublications
+          - for (var x = 0; x < 12; x++)
             .slideContent
-              img(src="/images/upload/brend1.png", alt="")
-            .slideContent
-              img(src="/images/upload/delov.png", alt="")
-            .slideContent
-              img(src="/images/upload/biznes.jpg", alt="")
-            .slideContent
-              img(src="/images/upload/sels.jpg", alt="Продавать")
-            .slideContent
-              img(src="/images/upload/noSlide.jpg", alt="")
+              img(src="/images/upload/carusels/LogoCompany/brend_1.jpg", alt="")

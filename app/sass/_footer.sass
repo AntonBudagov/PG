@@ -1,44 +1,89 @@
 .footer
-  padding-top: 62px
+
   #logoBlue
     display: block
     background-image: url(../images/logo.png)
     width: 221px
     height: 75px
-  .conntentFooter
+  .wrappFooter
+    background-color: whitesmoke
+    padding-top: 40px
+    padding-bottom: 18px
+  .contentFooter
     align-items: flex-start
-  .address
-    margin: 0 97px 0 99px
-    width: 283px
-    font-weight: 400
-    font-size: 15px
-    color: #3e3e3e
-    p
-      font-size: 15px
-      line-height: 18px
-    h5
-      color: #3e3e3e
-      font-weight: 500
-      font-size: 15px
-      line-height: 22px
-    span
-      color: #636363
-  .phones
-    width: 128px
-    .phone
-      font-size: 15px
+    justify-content: space-between
+    #logoBlue
+      margin-bottom: 57px
+
+    .contactInfo
+      width: 354px
+      display: flex
+      justify-content: space-between
+      .phone
+        font-size: 15px
+        font-weight: 400
+        line-height: normal
+        color: #3e3e3e
+        margin-bottom: 16px
+      a
+        color: #024787
+        display: block
+        font-size: 15px
+        line-height: normal
+        margin-bottom: 16px
+        text-decoration: none
+
+
+    .address
       font-weight: 400
-      line-height: 22px
-      color: #3e3e3e
-    a
-      color: #024787
-      display: block
       font-size: 15px
-      line-height: 22px
-      text-decoration: none
+      color: #3e3e3e
+      p
+        font-size: 16px
+        line-height: 22px
+        &:last-of-type
+          margin-top: 28px
+      h5
+        color: #3e3e3e
+        font-weight: 500
+        font-size: 24px
+        line-height: normal
+        font-family: $brendFont
+      span
+        color: #636363
+        font-size: 16px
+        font-weight: 400
+
+
+  .form
+    width: 379px;
+    height: 567px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    padding: 32px 35px 32px 34px
+    .title
+      color: #3e3e3e
+      font-family: $brendFont
+      font-size: 18px
+      font-weight: 500
+      line-height: 24px
+    input, textarea
+      width: 100%
+      margin-bottom: 13px
+    textarea
+      resize: vertical
+      height: 136px
+      margin-top: 12px
+      margin-bottom: 24px
+      border: solid 1px #e1e1e1
+      padding: 0px 17px
+
+    .btnBrendWhite
+      width: 177px
+
   #map
-    margin-top: 47px
-    height: 368px
+    height: 395px
     border-radius: 3px
 
 

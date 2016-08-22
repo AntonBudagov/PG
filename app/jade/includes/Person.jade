@@ -1,68 +1,28 @@
 mixin Person
-  .person
-    #owol-personSlider
-      .personWrapp
-        .wrappcContent
-          h2 Котов Евгений Игоревич
-          p.desc Владелец компании «Practicum Group» Бизнес-тренер в области продаж, мотивации, лидерстваАвтор системы подготовки продавцов «ПРОФЕССИОНАЛ» и «Профессиональные тренинги»
-          .groupInfo
-            .info
-              .number 15 лет
-              p управленческого опыта
-            .info
-              .number 18 лет
-              p личного опыта в области продаж
-            .info
-              .number 41 680
-              p человек было обучено за последние 10 лет.
-            .info
-              .number 1 234 200
-              p печатных экземпляров статей в изданиях.
-            .info
-              .number 4 000 000
-              p просмотров видео-уроков в интернете.
-      .personWrapp
-        .wrappcContent
-          h2 Котов Евгений Игоревич
-          p.desc Владелец компании «Practicum Group» Бизнес-тренер в области продаж, мотивации, лидерстваАвтор системы подготовки продавцов «ПРОФЕССИОНАЛ» и «Профессиональные тренинги»
-          .groupInfo
-            .info
-              .number 15 лет
-              p управленческого опыта
-            .info
-              .number 18 лет
-              p личного опыта в области продаж
-            .info
-              .number 41 680
-              p человек было обучено за последние 10 лет.
-            .info
-              .number 1 234 200
-              p печатных экземпляров статей в изданиях.
-            .info
-              .number 4 000 000
-              p просмотров видео-уроков в интернете.
-      .personWrapp
-        .wrappcContent
-          h2 Котов Евгений Игоревич
-          p.desc Владелец компании «Practicum Group» Бизнес-тренер в области продаж, мотивации, лидерстваАвтор системы подготовки продавцов «ПРОФЕССИОНАЛ» и «Профессиональные тренинги»
-          .groupInfo
-            .info
-              .number 15 лет
-              p управленческого опыта
-            .info
-              .number 18 лет
-              p личного опыта в области продаж
-            .info
-              .number 41 680
-              p человек было обучено за последние 10 лет.
-            .info
-              .number 1 234 200
-              p печатных экземпляров статей в изданиях.
-            .info
-              .number 4 000 000
-              p просмотров видео-уроков в интернете.
+  .specialOffer
+    .backgroundBrendBlue.wrappSpecialOffer
+      .wrappContent
+        h2 СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ ДО 15 ноября !
+        .onePlusOne.flexB
+          .one.flexB.wow.zoomIn(data-wow-delay="0.5s")
+            i.icon-pg.icon-yellowhands
+            .desc Профессиональные продажи
+              .number 50 000
+                +valute
+          .plus +
+          .one.flexB.wow.zoomIn(data-wow-delay="0.5s")
+            i.icon-pg.icon-yellowtea
+            .desc Профессиональная работа с возражениями
+              .number 50 000
+                +valute
+        .sumOld="75 000 "
+          +valute
+          hr
+        .sumNew="53 000 "
+          +valute
 
-  .presonPhilosophy
+        a.btn.btnBrendWhite.modal-trigger.wow.fadeInUp(href='#modal1' data-wow-delay="0.7s") Записаться на тренинг
+  //- .presonPhilosophy
     .backgroundBrend
       .wrappcContent.flexB
         .desc
@@ -71,68 +31,4 @@ mixin Person
         .videoItem(id="Jn7ZGKq21pU")
           .wrappImgVideo
             img(src="/images/upload/vidoe.jpg", alt="")
-
-  .backgroundBrendBlue
-    .wrappcContent.flexB
-      p.wow.fadeIn(data-wow-delay="0.5s") Стань чемпионом по продажам – запишись на трениг
-      a.btn.btnBrendWhite.modal-trigger.wow.fadeIn(data-wow-delay="0.5s" href='#modal1') Записаться на тренинг
-
-  .personTrening
-    .wrappcContent
-      h2 Тренинги от Евгения Котова
-      .decsription.flexB
-        .wrappTrening.wow.fadeInUp(data-wow-delay="0.8s")
-          .title.flexB
-            i.icon-pg.icon-many
-            h4 ПРОФЕССИОНАЛЬНЫЕ ПРОДАЖИ
-          p 53 видео урока и 88 практических заданий и тренировок
-          .gropInfo.flexB
-            .info
-              span Продолжительность
-              span 4 дня
-            .info
-              span Стоимость
-              div 50 000
-                +valute
-          a.btn.btnBrend.modal-trigger(href='#modal1') Зарегистрироваться на тренинг
-        .desc
-          .marks
-            p.marker.wow.fadeInUp(data-wow-delay="0.5s") — В связи с экономической ситуацией продажи упали?
-            p.marker.wow.fadeInUp(data-wow-delay="0.6s") — Ваши конкуренты играют всё более жёстко?
-            p.marker.wow.fadeInUp(data-wow-delay="0.7s") — Нет профессиональных продавцов?
-            p.marker.wow.fadeInUp(data-wow-delay="0.8s") — Продавцы не хотят учиться?
-          ul.wow.fadeInUp(data-wow-delay="0.9s")
-            li На тренинге Вы узнаете и научитесь:
-            li •Правильный подход к продажам и сервису.
-            li •Ключевые данные о воронке продаж.
-            li •Эмоция и логика - как правильно их использовать в продажах?
-            li •Техника выяснения потребностей.
-            li •Главные ошибки на этапе завершения сделки.
-          ul.wow.fadeInUp(data-wow-delay="1s")
-            li Тренинг для:
-            li Руководителей
-            li Владельцев бизнеса
-            li Продавцов, закупщиков, переговорщиков
-
-  .specialOffer
-    .backgroundBrendBlue.wrappSpecialOffer
-      .wrappcContent
-        h2 СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ ДО 15 ноября !
-        .onePlusOne.flexB
-          .one.flexB.wow.zoomIn(data-wow-delay="0.5s")
-            i.icon-pg.icon-many
-            h4 Профессиональные продажи 50 000
-              +valute
-          .plus +
-          .one.flexB.wow.zoomIn(data-wow-delay="0.5s")
-            i.icon-pg.icon-tie
-            h4 Профессиональная работа с возражениями 50 000
-              +valute
-        .sumOld="75 000 "
-          +valute
-          hr
-        .sumNew="53 000 "
-          +valute
-
-        a.btn.btnBrendWhite.modal-trigger.wow.fadeInUp(href='#modal1' data-wow-delay="0.7s") Записаться на тренинг
 

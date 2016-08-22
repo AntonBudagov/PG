@@ -1,5 +1,6 @@
 mixin advantages
   .advantages
+
     .wrappContent
       h3 Преимущества методики обучения:
       .advantagesInfoBlock.flexB
@@ -28,6 +29,7 @@ mixin advantages
           .brendLine
           h5 Быстрый результат
           p Повышение продаж уже на следующий день после завершения курса
+
     .backgroundBrendWhite
       .wrappContent
         h3 Ролики из программы обучения
@@ -35,12 +37,52 @@ mixin advantages
           .wrappVideo
             .wrappImgVideo
               img(src="/images/upload/video_1.jpg", alt="")
-            a.linkVideo(href="" target="_blank") Миф о профессии
+              a.linkVideo.modal-trigger(href='#video1') Миф о профессии
           .wrappVideo
             .wrappImgVideo
               img(src="/images/upload/video_2.jpg", alt="")
-            a.linkVideo(href="" target="_blank") Миф о профессии
-          .wrappVideo
-              .wrappImgVideo
-                img(src="/images/upload/video_3.jpg", alt="")
               a.linkVideo(href="" target="_blank") Миф о профессии
+          .wrappVideo
+            .wrappImgVideo
+              img(src="/images/upload/video_3.jpg", alt="")
+              a.linkVideo(href="" target="_blank") Миф о профессии
+
+    .wrappContent.resultsTreningWrapp
+      h3 Результат тренинга
+      .resultsTreningContent.flexB
+        .infoResult
+          .headInfoResult.flexB
+            i.icon-pg.icon-bluehands
+            .blueLine
+          p Вы овладете эффективной технологией продаж и переговоров,
+        .infoResult
+          .headInfoResult.flexB
+            i.icon-pg.icon-msg
+            .blueLine
+          p Натренируете способность уверенно вести переговоры с любыми клиентами
+        .infoResult
+          .headInfoResult
+            i.icon-pg.icon-check
+          p Сможете закрывать сделки любой сложности.
+
+    .backgroundBrendWhite.inTotals
+      .wrappContent.flexB
+        .infoInTotal
+          p Стоимость
+          .number="50 000 "
+            +valute
+        .infoInTotal
+          p Продолжительность
+          .number 4 дня
+        .infoInTotal
+          p Ближайший тренинг
+          .number 13-17 сентября
+        a.btn.btnBrend.modal-trigger(href='#modal1') Зарегистрироваться на тренинг
+
+#video1.modal.videoModal
+  .modal-content
+    iframe(width='100%', height='auto', src='https://www.youtube.com/embed/aCvrB3XPRuc', frameborder='0', allowfullscreen='')
+
+
+
+

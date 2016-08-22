@@ -1,51 +1,96 @@
 .advice
+
+  .massMediaPublications
+    padding-bottom: 20px
+    h2
+      color: #3e3e3e
+      font-size: 34px
+      font-weight: 400
+      padding-top: 79px
+      margin-bottom: 64px
+    .contentMassMediaPublications
+
+      .group-4
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: flex-start
+        margin-bottom: 76px
+      .group-3
+        justify-content: space-between
+        align-items: flex-start
+        width: 740px
+        margin: 0 auto 76px
+
+      .wrappImg
+        height: 103px
+        margin-bottom: 18px
+        display: flex
+        align-items: flex-end
+      .desc
+        color: #5c5c5c
+        font-size: 16px
+        line-height: 22px
+        &:before
+          content: '«'
+          font-size: 36px
+        &:after
+          content: '»'
+          font-size: 36px
+
+    .massMediaInfo
+      width: 220px
+
   .backgroundBrend
     padding: 53px 0 40px
-  h2
-    margin-bottom: 50px
-  h5
-    color: #3e3e3e
-    font-size: 18px
-    font-weight: 500
-    // +text-overflow
-    min-height: calc(20px * 2)
-    max-height: calc(20px * 2)
-    overflow: hidden
-  p
-    max-height: calc(18px * 5)
-    overflow: hidden
-  a
-    color: #004687
-    font-size: 15px
-    font-weight: 400
-    text-decoration: none
-    transition: all .35s
-    &:hover
-      text-decoration: underline
+    h2
+      margin-bottom: 50px
+    h5
+      color: #3e3e3e
+      font-size: 18px
+      font-weight: 500
+      // +text-overflow
+      min-height: calc(20px * 2)
+      max-height: calc(20px * 2)
+      overflow: hidden
+    p
+      max-height: calc(18px * 5)
+      overflow: hidden
+    a
+      color: #004687
+      font-size: 15px
+      font-weight: 400
+      text-decoration: none
+      transition: all .35s
+      &:hover
+        text-decoration: underline
 
-  .flexB
-    justify-content: space-between
-    align-items: flex-start
-  .card
-    height: 379px
-    width: 300px
-    .desc
-      padding: 21px 24px 32px 19px
+    .flexB
+      justify-content: space-between
+      align-items: flex-start
+    .card
+      height: 379px
+      width: 300px
+      border: none
+      .desc
+        padding: 21px 24px 32px 19px
 
-.backgroundBrendWhite
-  display: flex
-  align-items: center
+  .backgroundBrendWhite
+    display: flex
+    align-items: center
+    padding: 51px 0 47px
+    border: 1px solid #f2f2f2
+    background-color: white
+    h3
+      color: #3e3e3e
+      font-size: 24px
+      font-weight: 400
+      margin-right: 41px
+      width: 468px
 
-  h3
-    color: #3e3e3e
-    font-size: 24px
-    font-weight: 400
-    margin-right: 41px
-    width: 468px
-  input
-    margin-right: 25px
-  .btnBrendWhite
-    width: 177px
+    input
+      margin-right: 25px
+    .btnBrendWhite
+      width: 177px
 
 .inviteGroup
   background-image: url(/images/upload/back1.jpg)
@@ -53,8 +98,17 @@
   height: 665px
   h2
     padding-top: 73px
-    width: 520px
     color: #fff
     font-size: 34px
     font-weight: 400
     line-height: 44px
+    width: 474px
+    text-shadow: 0.5px 0.9px 2px #081023
+    font-family: $brendFont
+  .btnBrend
+    margin-top: 38px
+    width: 183px
+    height: 50px
+    line-height: 50px
+    font-size: 18px
+    font-weight: 500

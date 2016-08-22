@@ -31,8 +31,8 @@
 
   var Carusel = {
     items : 4,
-    navigation : false,
-    pagination: true,
+    nav : false,
+    dots: true,
     slideSpeed : 300,
     paginationSpeed : 400,
     singleItem: false,
@@ -61,7 +61,7 @@
 
   $("#owol-personSlider").owlCarousel(personSlider)
   $("#owl-caruselCompany").owlCarousel(Carusel)
-  $("#owl-caruselPublications").owlCarousel(Carusel)
+  // $("#owl-caruselPublications").owlCarousel(Carusel)
 
 
 
