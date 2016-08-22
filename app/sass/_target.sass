@@ -1,6 +1,6 @@
 .target
 .inProgramm
-  margin: 75px auto 0
+  margin: 75px auto 91px
   width: 964px
   h3
     text-align: center
@@ -37,25 +37,25 @@
   height: 344px
   position: relative
   width: 100
-  &:before
+  &:before, &:after
     position: absolute
     content: ''
     height: 100%
-    background-color: #fff
     width: 50%
     display: table
     top: 0
-    background-image: url(/images/upload/slide3_img1.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+  &:before
+    background-color: #eef4f4
+    background-image: url(/images/upload/slide3_img1.jpg);
+    background-position: right
+
   &:after
-    position: absolute
-    content: ''
-    height: 100%
     background-image: url(/images/upload/slide3_img2.jpg)
     background-color: #004687
-    width: 50%
-    display: table
     right: 0
-    top: 0
+
 
   .processSecond
     padding-top: 51px
@@ -79,7 +79,7 @@
     width: 50%
     justify-content: flex-end
     .exept
-      width: 287px
+      width: 290px
       color: #3e3e3e
   .leftContent
     padding-right: 107px
